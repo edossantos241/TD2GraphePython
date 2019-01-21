@@ -22,3 +22,6 @@ class Sommet:
         
     def reset(self):
         self.visite=False
+
+    def __repr__(self):
+        return f"{self.name}"

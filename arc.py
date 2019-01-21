@@ -51,3 +51,6 @@ class Arc:
     
     def reset(self):
         self.choisi = False
+
+    def __repr__(self):
+        return f"{self.source, self.cible} : {self.value}"

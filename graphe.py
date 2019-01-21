@@ -80,3 +80,4 @@ class Graphe:
             plt.plot(x_visited,y_visited,'ro',markersize=20)
             plt.plot(x,y,'o',markersize=20,markerfacecolor='lightgrey')
         plt.show()
+

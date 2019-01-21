@@ -1,0 +1,21 @@
+    parent = {}
+    rang = {}
+
+def base(sommet):
+    parent[sommet] = sommet
+    rang[sommet] = 0
+
+def find(sommet):
+    if parent[sommet] != sommet:
+        parent[sommet] = find(parent[sommet])
+    return parent[sommet]
+
+def union(sommet1, sommet2):
+    base1 = find(sommet1)
+    base2 = find(sommet2)
+    if base1 != base2:
+        if rang[base1] > rang[base2]:
+            parent[base2] = base1
+        else:
+            parent[base1] = base2
+        if rang[base1] == rang[base2] : range[base2] +=1
